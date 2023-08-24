@@ -5,15 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .abs {
+            text-decoration: none;
+            color: blue;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        #topbtn {
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: aqua;
+            border: solid 1px blue;
+            border-radius: 50%;
+            transition: color 0.3s ease-in-out;
+            /* Geçiş efekti */
+        }
+
+        #topbtn:hover {
+            --tw-border-opacity: 1;
+            --tw-bg-opacity: 1;
+            --tw-text-opacity: 1;
+            background-color: rgba(52, 53, 65, var(--tw-bg-opacity));
+            border-color: rgba(86, 88, 105, var(--tw-border-opacity));
+            color: rgba(217, 217, 227, var(--tw-text-opacity));
+        }
+    </style>
 </head>
 
 <body>
+    <div id="top"></div>
     Hello, world
     <a href="dasa" target="_blank">asd</a>
     <h1> Hello world </h1>
-    <a href="about.html" target="_blank">About page</a>
-    <img src="test.gif"
-        alt="">
+    <a href="about.html" class="abs" target="_blank">About page</a>
+    <button id="topbtn">go to top</button>
+    <img src="test.gif" alt="">
 </body>
+<script>
+    // Sayfanın en üstüne gitmek için JavaScript kodu
+    document.getElementById("topbtn").addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Time</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body onscroll="scrollFunc()">
+  <main>
+    <nav class="menu" id="menu">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#aboutus">About Us</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="s-main" id="home">
+      <div class="hero">
+        <h1>TRAVEL TIME</h1>
+        <div class="short">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maiores quia ducimus
+          molestias praesentium,
+          illum a fugit quod, porro consectetur modi iste
+        </div>
+        <a href="" class="hero-btn">Join</a>
+      </div>
+
+    </section>
+    <section class="s-gallery" id="aboutus">
+      <div class="container">
+        <h2>Where do you want to go?</h2>
+        <div class="travel-gallery">
+          <div class="cards">
+            <div class="card">
+              <img src="assets/images/m1.jpg" alt="">
+              <div class="bold">Mountain</div>
+              <div>at nemo totam ipsa. Porro, ratione saepe. Qui, placeat sint? Molestias.</div>
+              <a href="#" class="btn">Read more...</a>
+            </div>
+            <div class="card">
+              <img src="assets/images/m1.jpg" alt="">
+              <div class="bold">Mountain</div>
+              <div>at nemo totam ipsa. Porro, ratione saepe. Qui, placeat sint? Molestias.</div>
+              <a href="#" class="btn">Read more...</a>
+            </div>
+            <div class="card">
+              <img src="assets/images/m1.jpg" alt="">
+              <div class="bold">Mountain</div>
+              <div>at nemo totam ipsa. Porro, ratione saepe. Qui, placeat sint? Molestias.</div>
+              <a href="#" class="btn">Read more...</a>
+            </div>
+            <div class="card">
+              <img src="assets/images/m1.jpg" alt="">
+              <div class="bold">Mountain</div>
+              <div>at nemo totam ipsa. Porro, ratione saepe. Qui, placeat sint? Molestias.</div>
+              <a href="#" class="btn">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-about" id="gallery">
+      <div class="container2">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum fugit minima suscipit molestiae quibusdam
+          tempore, blanditiis nemo excepturi neque! Est at praesentium recusandae, repellat consectetur doloribus fugit
+          exercitationem provident tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          voluptatum sequi, deleniti iste dolore perferendis libero ipsum? Voluptatem voluptas ea nostrum neque commodi,
+          ipsa voluptatum dm recusandae, repellat consectetur doloribus fugit
+          exercitationem provident tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          voluptatum sequi, deleniti iste dolore perferendis libero ipsum? Voluptatem voluptas ea nostrum neque commodi,
+          ipsa voluptatum ducimus similique soluta quis itaque?</p>
+      </div>
+    </section>
+  </main>
+</body>
+<script >
+  function scrollFunc() {
+    let menu= document.getElementById("home");
+    var rect = menu.getBoundingClientRect();
+    if (window.scrollY > 100) {
+      document.getElementById("menu").style.backgroundColor = "rgba(123,123,12,0.6)";
+    }
+    else{
+      document.getElementById("menu").style.backgroundColor = "";
+    }
+  }
+</script>
+</html>
